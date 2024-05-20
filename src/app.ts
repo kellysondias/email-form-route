@@ -22,6 +22,8 @@ app.use((_, res, next) => {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => res.status(200).send("Hello world."))
+
 app.post("/send-email", async ({ body }, res) => {
 	const { name, email, message: text } = body;
 
