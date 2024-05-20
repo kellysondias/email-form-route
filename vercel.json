@@ -15,5 +15,5 @@
 			"dest": "src/server.ts"
 		}
 	],
-	"outputDirectory": "build"
+	"outputDirectory": "public"
 }
