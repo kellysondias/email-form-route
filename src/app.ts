@@ -26,7 +26,6 @@ app.post("/send-email", async ({ body }, res) => {
 	const { name, email, message: text } = body;
 
 	try {
-		// Configuração do transporte
 		const transporter = nodemailer.createTransport({
 			service: "outlook",
 			auth: {
